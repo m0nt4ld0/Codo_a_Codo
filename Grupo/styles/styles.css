@@ -1,60 +1,63 @@
+/* importo el font */
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 
+/* configuro algunos parámetros generales del CSS */
 :root {
+  /* defino la fuente general para Bootstrap*/
   font-family: "Ubuntu", cursive;
   font-size: 16px;
   font-weight: 400;
-  /*defino la fuente general para Bootstrap*/
   font-style: normal;
   box-sizing: border-box;
 
-  /*TPH: VER 0.2PX QUE FALTA!!!*/
-  /*definir variables!!!*/
-  --tamanio: 25px;
-
-  /*definir variables*/
+  /*definir variables. Solo como recordatorio de los colores, uso los valores hexadecimales en Bootstrap*/
   --texto-blanco: #ffffff;
   --color-primario: #9f3647;
   --fondo-negro: #0a0a0a;
-
-  /*gris*/
   --gris: #808080;
 }
 
+/* configuro el color del navbar */
 .custom-navbar-bg {
-  background-color: #9f3647 !important; /* Color personalizado */
-  /* Otros estilos que desees aplicar al navbar */
+  background-color: #9f3647 !important;
 }
 
+/* configuro la altura del navbar */
 .navbar {
   min-height: 10vh; /* Establece la altura mínima del navbar a 10vh */
-  width: 100%; /* Establece el ancho del navbar al 100% */
 }
 
+/* configuro el formato del del logo y el texto del navbar */
 .navbar-brand {
   font-size: 1.2rem;
   margin-left: 30px;
   font-weight: bold !important;
 }
 
-.btn-session{
+/* configuro el formato del boton de inicio a la session */
+.btn-session {
   background-color: black !important;
   font-size: 1.2rem;
+  padding: 7px;
 }
 
+/* configuro el formato de los otros dos botones */
 .btn-danger {
   margin-right: 30px;
   font-size: 1.2rem;
+  padding: 7px;
 }
 
+/* configuro que pasa cuando hago hover en los botones */
 .btn-danger:hover {
   background-color: #9f3647 !important;
   background-origin: inherit;
   box-shadow: 1px 1px 1px 1px #0a0a0a !important;
 }
 
+/* configuro que pasa cuando hago hover en el botón de sesión */
 .btn-session:hover {
-    background-color: #9f3647 !important;
-    background-origin: inherit;
-    box-shadow: 1px 1px 1px 1px #0a0a0a !important;
-  }
+  background-color: #9f3647 !important;
+  background-origin: inherit;
+  box-shadow: 1px 1px 1px 1px #0a0a0a !important;
+}
