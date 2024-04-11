@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+:root {
+  font-family: "Ubuntu", cursive;
+  font-size: 16px;
+  font-weight: 400;
+  /*defino la fuente general para Bootstrap*/
+  font-style: normal;
+  box-sizing: border-box;
+
+  /*TPH: VER 0.2PX QUE FALTA!!!*/
+  /*definir variables!!!*/
+  --tamanio: 25px;
+
+  /*definir variables*/
+  --texto-blanco: #ffffff;
+  --color-primario: #9f3647;
+  --fondo-negro: #0a0a0a;
+
+  /*gris*/
+  --gris: #808080;
+}
+
+.custom-navbar-bg {
+  background-color: #9f3647 !important; /* Color personalizado */
+  /* Otros estilos que desees aplicar al navbar */
+}
+
+.navbar {
+  min-height: 10vh; /* Establece la altura mínima del navbar a 10vh */
+  width: 100%; /* Establece el ancho del navbar al 100% */
+}
+
+.navbar-brand {
+  font-size: 1.2rem;
+  margin-left: 30px;
+  font-weight: bold !important;
+}
+
+.btn-session{
+  background-color: black !important;
+  font-size: 1.2rem;
+}
+
+.btn-danger {
+  margin-right: 30px;
+  font-size: 1.2rem;
+}
+
+.btn-danger:hover {
+  background-color: #9f3647 !important;
+  background-origin: inherit;
+  box-shadow: 1px 1px 1px 1px #0a0a0a !important;
+}
+
+.btn-session:hover {
+    background-color: #9f3647 !important;
+    background-origin: inherit;
+    box-shadow: 1px 1px 1px 1px #0a0a0a !important;
+  }
