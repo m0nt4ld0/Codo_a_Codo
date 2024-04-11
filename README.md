@@ -1,1 +1,1 @@
-El repositorio del proyect de Front End de Codo a Codo
+El repositorio del proyecto de Front End de Codo a Codo
