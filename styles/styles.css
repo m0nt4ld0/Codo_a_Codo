@@ -108,3 +108,11 @@
 input::placeholder {
   font-size: 1.2rem; /* Tamaño de fuente deseado */
 }
+
+/* CSS personalizado para reducir la longitud del campo de búsqueda en pantallas más pequeñas */
+@media (max-width: 768px) {
+  .form-control {
+      width: 50%; /* Porcentaje del ancho de la pantalla */
+      max-width: 300px; /* Máximo ancho para evitar que el campo se extienda demasiado */
+  }
+}
