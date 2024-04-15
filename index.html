@@ -11,9 +11,9 @@
       crossorigin="anonymous"
     />
     <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
-  />
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
     <link rel="stylesheet" href="./styles/styles.css" />
   </head>
 
@@ -23,7 +23,9 @@
       class="navbar bg-dark navbar-expand-md bg-body-tertiary custom-navbar-bg"
     >
       <div class="container-fluid">
-        <div class="navbar-brand text-white" href="#"><i class="bi bi-film"></i>&nbsp;CAC-Movies</div>
+        <div class="navbar-brand text-white" href="#">
+          <i class="bi bi-film"></i>&nbsp;CAC-Movies
+        </div>
         <button
           class="navbar-toggler custom-toggler"
           type="button"
@@ -40,14 +42,14 @@
             <!-- Añade la clase ms-auto aquí -->
             <li class="nav-item">
               <button
-                class="nav-link btn btn-danger text-white "
+                class="nav-link btn btn-danger text-white"
                 aria-current="page"
               >
                 Tendencias
               </button>
             </li>
             <li class="nav-item">
-                <button
+              <button
                 class="nav-link btn btn-danger text-white"
                 aria-current="page"
               >
@@ -55,11 +57,11 @@
               </button>
             </li>
             <li class="nav-item">
-                <button
+              <button
                 class="nav-link btn btn-session text-white"
                 aria-current="page"
               >
-                Iniciar Session
+                Iniciar Sesion
               </button>
             </li>
           </ul>
@@ -68,46 +70,147 @@
     </nav>
 
     <!-- Imagen de fondo con el texto -->
-      <div class="container-fluid p-0">
-        <div class="row g-0">
-            <div class="col-md-12" style="margin-bottom: 0;">
-                <div class="position-relative">
-                    <img src="./imgs/banner-bg.jpg" class="img-fluid" alt="Banner" style="filter: brightness(60%);">
-                    <div class="position-absolute top-50 start-50 translate-middle text-center ">
-                        <div class="text-white" style="font-size: 3.7vw; font-weight: 500; margin:0;">Películas y series ilimitadas</div>
-                        <div class="text-white" style="font-size: 3.7vw; font-weight: 500; margin:0;">en un solo lugar</div>
-                        <div class="text-white" style="font-size: 2.5vw; font-weight: 400; margin:0;">Disfruta donde quieras.</div>
-                        <div class="text-white" style="font-size: 2.5vw; font-weight: 400; margin:0;">Cancela en cualquier momento.</div>
-                        <button type="button" class="btn btn-danger mt-4 btn-registrate">Regístrate</button>
-                    </div>
-                </div>
+    <div class="container-fluid p-0">
+      <div class="row g-0">
+        <div class="col-md-12" style="margin-bottom: 0">
+          <div class="position-relative">
+            <img
+              src="./imgs/banner-bg.jpg"
+              class="img-fluid"
+              alt="Banner"
+              style="filter: brightness(60%)"
+            />
+            <div
+              class="position-absolute top-50 start-50 translate-middle text-center"
+            >
+              <div
+                class="text-white"
+                style="font-size: 3.7vw; font-weight: 500; margin: 0"
+              >
+                Películas y series ilimitadas
+              </div>
+              <div
+                class="text-white"
+                style="font-size: 3.7vw; font-weight: 500; margin: 0"
+              >
+                en un solo lugar
+              </div>
+              <div
+                class="text-white"
+                style="font-size: 2.5vw; font-weight: 400; margin: 0"
+              >
+                Disfruta donde quieras.
+              </div>
+              <div
+                class="text-white"
+                style="font-size: 2.5vw; font-weight: 400; margin: 0"
+              >
+                Cancela en cualquier momento.
+              </div>
+              <button type="button" class="btn btn-danger mt-4 btn-registrate">
+                Regístrate
+              </button>
             </div>
+          </div>
         </div>
       </div>
+    </div>
 
-        <!-- texto de búsqueda -->
-        <div class="row animar-hacia-arriba">
-          <div class="col-md-12 text-center" style="background-color:#020000;">
-              <p class="texto-busqueda mb-5 fs-1 fs-md-1.5">¿Qué estás buscando para ver?</p>
+    <!-- texto de búsqueda -->
+    <div class="row">
+      <div class="col-md-12 text-center" style="background-color: #020000">
+        <p class="texto-busqueda mb-5 fs-1 fs-md-1.5">
+          ¿Qué estás buscando para ver?
+        </p>
+      </div>
+    </div>
+
+    <!-- Formulario de búsqueda -->
+    <div class="row">
+      <div class="col-md-12 text-center" style="background-color: #020000">
+        <form class="d-inline mb-md-5">
+          <div
+            class="input-group mb-3 justify-content-center"
+            style="max-width: 600px; margin: 0 auto"
+          >
+            <input
+              type="text"
+              class="form-control rounded-pill"
+              placeholder="Buscar..."
+            />
+            <button class="btn-buscar rounded-pill ms-3" type="button">
+              Buscar
+            </button>
           </div>
+        </form>
+
+        <!-- El borde inferior rojo -->
+        <hr
+          class="border border-danger border-2 opacity-50 mx-auto"
+          style="width: 80vw; margin-top: 150px"
+        />
+      </div>
+    </div>
+
+    <!-- Texto de tendencias -->
+    <div class="row">
+      <div class="col-md-12 text-center" style="background-color: #020000">
+        <p class="texto-tendencias mb-5 fs-1 fs-md-1.5">
+          Las tendencias de hoy
+        </p>
+      </div>
+    </div>
+
+    <!-- Imágenes -->
+    <div class="container-fluid">
+      <div
+        class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 row-cols-xxl-5 justify-content-center text-center"
+        style="background-color: #020000"
+      >
+        <!-- Imagen 1 -->
+        <div class="col mr-3 mb-3">
+          <img
+            src="./imgs/peliculas/12 Angry Men.jpg"
+            class="pelicula"
+            alt="Imagen 1"
+          />
         </div>
-         <!-- Formulario de búsqueda -->
-
-        <div class="row">
-          <div class="col-md-12 text-center" style="background-color:#020000;">
-              <form class="d-inline mb-md-5">
-                  <div class="input-group mb-3 justify-content-center" style="max-width: 600px; margin: 0 auto;">
-                      <input type="text" class="form-control rounded-pill" placeholder="Buscar...">
-                      <button class="btn-buscar rounded-pill ms-3" type="button">Buscar</button>
-                  </div>
-              </form>
-              <!-- El borde inferior rojo -->
-              <hr class="border border-danger border-2 opacity-50 mx-auto" style="width: 80vw; margin-top: 150px;">
-          </div>
+        <!-- Imagen 2 -->
+        <div class="col mr-3 mb-3">
+          <img
+            src="./imgs/peliculas/24 hours with gaspar.jpg"
+            class="pelicula"
+            alt="Imagen 2"
+          />
         </div>
+        <!-- Imagen 3 -->
+        <div class="col mr-3 mb-3">
+          <img
+            src="./imgs/peliculas/After the Pandemic.jpg"
+            class="pelicula"
+            alt="Imagen 3"
+          />
+        </div>
+        <!-- Imagen 4 -->
+        <div class="col mr-3 mb-3">
+          <img
+            src="./imgs/peliculas/Alienoid.jpg"
+            class="pelicula"
+            alt="Imagen 4"
+          />
+        </div>
+        <!-- Imagen 5 -->
+        <div class="col mb-3">
+          <img
+            src="./imgs/peliculas/Anyone Buit You.jpg"
+            class="pelicula"
+            alt="Imagen 5"
+          />
+        </div>
+        <!-- Repite según sea necesario para agregar más imágenes -->
+      </div>
+    </div>
 
-
-        
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"

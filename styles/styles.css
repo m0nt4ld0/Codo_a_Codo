@@ -116,3 +116,17 @@ input::placeholder {
       max-width: 300px; /* Máximo ancho para evitar que el campo se extienda demasiado */
   }
 }
+ 
+/* configuro el estilo del texto de tendencias */
+.texto-tendencias{
+  color: white; 
+  font-weight: 500;
+  margin-top: 0.1rem;
+}
+
+/* Configuro las imágenes de las peliculas  */
+.pelicula {
+  width: 200px; 
+  height: 300px;
+  border-radius: 10px; /* Agrega un borde redondeado */
+}
