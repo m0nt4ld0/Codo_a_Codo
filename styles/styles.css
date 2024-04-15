@@ -129,7 +129,6 @@ input::placeholder {
   width: 200px; 
   height: 300px;
   border-radius: 10px; /* Agrega un borde redondeado */
-  margin-bottom: 80px;
   transition: transform 0.4s, filter 0.4s, box-shadow 0.4s; /* Transiciones suaves */
 }
 
@@ -149,6 +148,7 @@ input::placeholder {
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden; /* Para ocultar cualquier contenido que se salga de la caja */
+  margin-bottom: 80px !important;
 }
 
 .overlay-box .image {
