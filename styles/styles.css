@@ -8,7 +8,7 @@
   font-size: 16px;
   font-weight: 400;
   font-style: normal;
-  box-sizing: border-box;
+  box-sizing: border-box;-
 
   /*definir variables. Solo como recordatorio de los colores, uso los valores hexadecimales en Bootstrap*/
   --texto-blanco: #ffffff;
@@ -129,4 +129,50 @@ input::placeholder {
   width: 200px; 
   height: 300px;
   border-radius: 10px; /* Agrega un borde redondeado */
+  margin-bottom: 80px;
+  transition: transform 0.4s, filter 0.4s, box-shadow 0.4s; /* Transiciones suaves */
+}
+
+/* Efecto al hacer hover sobre la imagen */
+.pelicula:hover {
+  transform: scale(0.9); /* Reduce el tamaño un 10% */
+  filter: blur(10px); /* Aplica un blur */
+  box-shadow: 0 0 20px 5px rgba(159, 54, 71, 0.8); /* Agrega una sombra más amplia con color rgba(159, 54, 71, 0.8) */
+}
+
+
+
+/* Agrego el texto cuando hago foco en la imagen*/
+.overlay-box {
+  position: relative;
+  height: 300px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden; /* Para ocultar cualquier contenido que se salga de la caja */
+}
+
+.overlay-box .image {
+  filter: blur(5px); /* Agrega el desenfoque a la imagen */
+  transition: filter 0.3s ease; /* Agrega una transición suave al desenfoque */
+}
+
+.overlay-box:hover .image {
+  filter: blur(5px); /* Mantiene el desenfoque al hacer hover */
+}
+
+.overlay-box .desc {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  padding: 10px;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 500;
+  transition: opacity 0.3s ease;
+}
+
+.overlay-box:hover .desc {
+  opacity: 1; /* Muestra el texto al hacer hover */
 }
