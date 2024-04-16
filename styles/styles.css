@@ -197,8 +197,23 @@ input::placeholder {
   background-color: #9f3647 !important;
   font-size: 1.2rem;
   border: white solid 1px;
-  padding:12px 25px 12px 25px;
-  font-weight: 600;
+  padding:20px 25px 20px 25px;
+  font-weight: 400;
   max-width: fit-content;
   margin-bottom: 100px;
+  transition: box-shadow 0.5s;
+  transition: transform 0.5s;
+}
+
+/* configuro que pasa cuando hago hover en el boton tendencias */
+.btn-tendencias:hover {
+  background-color: #9f3647 !important;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5) !important;
+  transform: scale(0.95); /* Reducir el tamaño al 95% */
+  border: white solid 1px;
+}
+
+.texto-aclamadas{
+  color: white;
+  font-size: 2rem;
 }
