@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Replace Content with Checkbox</title>
+<style>
+    /* Estilo para el botón */
+    .toggle-btn {
+        display: none; /* Ocultar el checkbox */
+    }
+
+    /* Estilo para el contenido original */
+    .original-content {
+        display: block; /* Mostrar el contenido original por defecto */
+    }
+
+    /* Estilo para el contenido alternativo */
+    .alternative-content {
+        display: none; /* Ocultar el contenido alternativo por defecto */
+    }
+
+    /* Estilo para el contenido alternativo cuando el checkbox está seleccionado */
+    .toggle-btn:checked + .original-content + .alternative-content {
+        display: block; /* Mostrar el contenido alternativo cuando el checkbox está seleccionado */
+    }
+
+    /* Estilo para ocultar el contenido original cuando el checkbox está seleccionado */
+    .toggle-btn:checked + .original-content {
+        display: none; /* Ocultar el contenido original cuando el checkbox está seleccionado */
+    }
+</style>
+</head>
+<body>
+
+    <!-- Checkbox para alternar el contenido -->
+    <input type="checkbox" id="toggle" class="toggle-btn">
+
+    <!-- Etiqueta para el botón -->
+    <label for="toggle">Toggle Content</label>
+
+    <!-- Contenido original -->
+    <div class="original-content">
+        <p>Este es el contenido original.</p>
+    </div>
+
+    <!-- Contenido alternativo -->
+    <div class="alternative-content">
+        <p>Este es el contenido alternativo.</p>
+    </div>
+
+</body>
+</html>
