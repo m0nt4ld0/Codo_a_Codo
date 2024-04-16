@@ -124,7 +124,7 @@ input::placeholder {
   margin-top: 0.1rem;
 }
 
-/* Configuro las imágenes de las peliculas  */
+/* Configuro las imágenes de las peliculas */
 .pelicula {
   width: 200px; 
   height: 300px;
@@ -132,23 +132,43 @@ input::placeholder {
   transition: transform 0.4s, filter 0.4s, box-shadow 0.4s; /* Transiciones suaves */
 }
 
-/* Efecto al hacer hover sobre la imagen */
+/* Efecto al hacer hover sobre la imagen en pantallas grandes */
 .pelicula:hover {
   transform: scale(0.9); /* Reduce el tamaño un 10% */
   filter: blur(10px); /* Aplica un blur */
   box-shadow: 0 0 20px 5px rgba(159, 54, 71, 0.8); /* Agrega una sombra más amplia con color rgba(159, 54, 71, 0.8) */
 }
 
+/* Media query para aumentar el tamaño de la imagen en pantallas extra pequeñas */
+@media (max-width: 576px) {
+  .pelicula {
+    transform: scale(1.2); /* Aumenta el tamaño en un 20% manteniendo el aspect ratio */
+    transition: transform 0.4s; /* Agrega una transición suave al cambio de tamaño */
+    margin-bottom: 100px;
+  }
+
+  /* Efecto al hacer hover sobre la imagen en pantallas extra pequeñas */
+  .pelicula:hover {
+    transform: scale(1); /* Mantiene el mismo tamaño al hacer hover */
+    filter: blur(10px); /* Aplica un blur */
+    box-shadow: 0 0 20px 5px rgba(159, 54, 71, 0.8); /* Agrega una sombra más amplia con color rgba(159, 54, 71, 0.8) */
+  }
+}
+
+
+
+
 
 
 /* Agrego el texto cuando hago foco en la imagen*/
 .overlay-box {
   position: relative;
-  height: 300px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  overflow: hidden; /* Para ocultar cualquier contenido que se salga de la caja */
   margin-bottom: 80px !important;
+  /* height: 300px; */
+  /* background-repeat: no-repeat; */
+  /* background-size: cover; */
+  /*  *overflow: hidden; Para ocultar cualquier contenido que se salga de la caja */ 
+  
 }
 
 .overlay-box .image {
@@ -176,3 +196,4 @@ input::placeholder {
 .overlay-box:hover .desc {
   opacity: 1; /* Muestra el texto al hacer hover */
 }
+
