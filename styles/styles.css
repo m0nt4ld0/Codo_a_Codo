@@ -213,7 +213,18 @@ input::placeholder {
   border: white solid 1px;
 }
 
+/* configuro el estilo del texto de aclamadas */
 .texto-aclamadas{
   color: white;
-  font-size: 2rem;
+  font-size: 2.7rem;
+  font-weight: 500;
 }
+
+/* Configuro las imágenes de aclamadas */
+.carousel-item > img {
+  border-radius: 10px; /* Redondear los bordes de las imágenes */
+  width: 15%; /* Ajustar el ancho de las imágenes */
+  min-width: 200px;
+}
+
+
