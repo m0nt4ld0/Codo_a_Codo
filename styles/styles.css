@@ -227,4 +227,8 @@ input::placeholder {
   min-width: 200px;
 }
 
+/* configuro el footer */
+footer{
+  background-color:#9f3647;
+}
 
