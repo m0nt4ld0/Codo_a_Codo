@@ -8,7 +8,7 @@
   font-size: 16px;
   font-weight: 400;
   font-style: normal;
-  box-sizing: border-box;-
+  box-sizing: border-box;
 
   /*definir variables. Solo como recordatorio de los colores, uso los valores hexadecimales en Bootstrap*/
   --texto-blanco: #ffffff;
@@ -227,8 +227,18 @@ input::placeholder {
   min-width: 200px;
 }
 
-/* configuro el footer */
-footer{
-  background-color:#9f3647;
+/* configuro los formatos de los botones de footer*/
+.btn-session-footer {
+  background-color: black !important;
+  font-size: 1.2rem;
+  padding: 7px;
 }
+
+.btn-danger-footer {
+  margin-right: 30px;
+  font-size: 1.2rem;
+  padding: 7px;
+}
+
+
 
