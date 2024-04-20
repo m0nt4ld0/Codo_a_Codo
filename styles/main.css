@@ -256,7 +256,7 @@ input::placeholder {
 
  /* Estilos para el ícono fijo- */
  .fixed-icon {
-  color: white;
+  color: var(--fondo-negro);
   font-size: 2.5rem;
   position: fixed;
   bottom: 20px; /* Ajusta la distancia desde la parte inferior */
