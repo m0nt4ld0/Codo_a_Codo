@@ -275,3 +275,23 @@ input::placeholder {
 .girar:hover {
   transform: rotate(360deg) ; /* Rotación completa al hacer hover */
 }
+
+/* ************************* Formato de scrollbar *************************  */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--fondo-negro); 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--color-primario); 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-primario); 
+}
