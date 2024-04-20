@@ -21,17 +21,22 @@
 .texto-registro{
     color: white; 
     font-weight: 500;
-    font-size: 1.7rem;
+    font-size: 2.5rem;
     text-align: left;
     margin-bottom: 1rem;
   }
-
 
 .texto-ayuda{
     color:gray; 
     font-size: 1rem;
     text-align: left;
     text-decoration: none;
+}
+
+.registrarse-forma{
+  background-color: #1d1d1d;
+  padding:120px 100px 120px 100px;
+  margin-top: 30px;
 }
   
   
