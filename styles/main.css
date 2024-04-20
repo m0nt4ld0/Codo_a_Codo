@@ -255,4 +255,12 @@ input::placeholder {
 }
 
 
+/* Para hacer girar el ícono fijo- */
+.girar {
+  transition: transform 0.5s !important; /* Agrega transición suave para la rotación */
+}
 
+/* Efecto de rotación al hacer hover */
+.girar:hover {
+  transform: rotate(360deg) !important; /* Rotación completa al hacer hover */
+}
