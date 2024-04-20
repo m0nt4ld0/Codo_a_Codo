@@ -15,13 +15,19 @@
   /*definir variables. Solo como recordatorio de los colores, uso los valores hexadecimales en Bootstrap*/
   --texto-blanco: #ffffff;
   --color-primario: #9f3647;
-  --fondo-negro: #0a0a0a;
+  --fondo-negro: #181419;
+  --color-negro: #0a0a0a;
   --gris: #808080;
+}
+
+body {
+  background-color: var(--fondo-negro);
+  font-family: 'Ubuntu', cursive
 }
 
 /* configuro el color del navbar */
 .custom-navbar-bg {
-  background-color: #9f3647 !important;
+  background-color: var(--color-primario) !important;
 }
 
 /* configuro la altura del navbar */
@@ -38,7 +44,7 @@
 
 /* configuro el formato del boton de inicio a la session */
 .btn-session {
-  background-color: black !important;
+  background-color: var(--color-primario) !important;
   font-size: 1.2rem;
   padding: 7px;
   margin-right: 30px;
@@ -53,21 +59,21 @@
 
 /* configuro que pasa cuando hago hover en los botones */
 .btn-danger:hover {
-  background-color: #9f3647 !important;
+  background-color: var(--color-primario) !important;
   background-origin: inherit;
-  box-shadow: 1px 1px 1px 1px #0a0a0a !important;
+  box-shadow: 1px 1px 1px 1px var(--fondo-negro) !important;
 }
 
 /* configuro que pasa cuando hago hover en el botón de sesión */
 .btn-session:hover {
-  background-color: #9f3647 !important;
+  background-color: var(--color-primario) !important;
   background-origin: inherit;
-  box-shadow: 1px 1px 1px 1px #0a0a0a !important;
+  box-shadow: 1px 1px 1px 1px var(--fondo-negro) !important;
 }
 
 /* Configuro el boton de registro */
 .btn-registrate {
-  background-color: #9f3647 !important;
+  background-color: var(--color-primario) !important;
   font-size: 1.2rem;
   border: none;
   padding:12px 35px 12px 35px;
@@ -78,7 +84,7 @@
 
 /* configuro que pasa cuando hago hover en el boton registrate */
 .btn-registrate:hover {
-  background-color: #9f3647 !important;
+  background-color: var(--color-primario) !important;
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.5) !important;
   transform: scale(0.95); /* Reducir el tamaño al 95% */
 }
@@ -92,7 +98,7 @@
 
 /* configuro el boton de búsqueda */
 .btn-buscar {
-  background-color: #9f3647 !important;
+  background-color: var(--color-primario) !important;
   font-size: 1.2rem;
   color: white;
   border: 2px solid white; /* Agregar borde blanco de 2px */
@@ -102,7 +108,7 @@
 
 /* configuro que pasa cuando hago hover en el boton registrate */
 .btn-buscar:hover {
-  background-color: #9f3647 !important;
+  background-color: var(--color-primario) !important;
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.5) !important;
   transform: scale(0.95); /* Reducir el tamaño al 95% */
 }
@@ -197,7 +203,7 @@ input::placeholder {
 
 /* Configuro el boton de tendencias */
 .btn-tendencias {
-  background-color: #9f3647 !important;
+  background-color: var(--color-primario) !important;
   font-size: 1.2rem;
   border: white solid 1px;
   padding:20px 25px 20px 25px;
@@ -210,11 +216,13 @@ input::placeholder {
 
 /* configuro que pasa cuando hago hover en el boton tendencias */
 .btn-tendencias:hover {
-  background-color: #9f3647 !important;
+  background-color: var(--color-primario) !important;
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.5) !important;
   transform: scale(0.95); /* Reducir el tamaño al 95% */
   border: white solid 1px;
 }
+
+/* ************************* Formato de sección aclamadas *************************  */
 
 /* configuro el estilo del texto de aclamadas */
 .texto-aclamadas{
@@ -230,9 +238,12 @@ input::placeholder {
   min-width: 200px;
 }
 
+/* ************************* Formato de footer *************************  */
+
+/* Footer (botones) */
 /* configuro los formatos de los botones de footer*/
 .btn-session-footer {
-  background-color: black !important;
+  background-color: var(--fondo-negro) !important;
   font-size: 1.2rem;
   padding: 7px;
 }
