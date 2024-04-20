@@ -257,10 +257,10 @@ input::placeholder {
 
 /* Para hacer girar el ícono fijo- */
 .girar {
-  transition: transform 0.5s !important; /* Agrega transición suave para la rotación */
+  transition: transform 0.5s; /* Agrega transición suave para la rotación */
 }
 
-/* Efecto de rotación al hacer hover */
+/* Efecto de rotación al hacer hover sobre el icono */
 .girar:hover {
-  transform: rotate(360deg) !important; /* Rotación completa al hacer hover */
+  transform: rotate(360deg) ; /* Rotación completa al hacer hover */
 }
