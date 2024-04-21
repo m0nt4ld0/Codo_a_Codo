@@ -204,9 +204,8 @@ input::placeholder {
 /* Configuro el boton de tendencias */
 .btn-tendencias {
   background-color: var(--color-primario) !important;
-  font-size: 1.2rem;
+  font-size: 1 rem;
   border: white solid 1px;
-  padding:20px 25px 20px 25px;
   font-weight: 400;
   max-width: fit-content;
   margin-bottom: 100px;
