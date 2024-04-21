@@ -22,7 +22,8 @@
 
 body {
   background-color: var(--fondo-negro);
-  font-family: 'Ubuntu', cursive
+  font-family: 'Ubuntu', cursive;
+  overflow-x: hidden;
 }
 
 /* configuro el color del navbar */
