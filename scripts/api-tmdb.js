@@ -6,9 +6,7 @@ const titleElement = document.getElementsByTagName('title')[0];
 
 function busqueda() {
     const searchFilm = document.getElementById('txtBusqueda').value;
-    //console.log(searchFilm);
     const apiUrl = `https://api.themoviedb.org/3/search/movie?query=${searchFilm}&api_key=${apiKey}`;
-    //console.log(apiUrl);
     fetch(apiUrl)
   .then(response => {
     if (!response.ok) {
@@ -17,8 +15,9 @@ function busqueda() {
     return response.json();
   })
   .then(data => {
+    var cant = data.results.length;
     for(var r of data.results) {
-        titleElement.innerHTML = `CAC-MOVIES | Resultados`,
+        titleElement.innerHTML = `CAC-MOVIES | ${cant} Resultados para "${searchFilm}"`,
         outputElement.innerHTML += `
         <div class="card" style="width: 10rem; float:left; margin-left:2rem;">
             <img class="card-img-top" src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/${r.poster_path}" alt="${r.original_title}">
@@ -28,7 +27,6 @@ function busqueda() {
             <a href="#" class="btn btn-primary">Ver más</a>
             </div>
         </div>`
-        
     }
     
   })
