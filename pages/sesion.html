@@ -35,17 +35,23 @@
                   <div class="registrarse-forma">
                     <div class="texto-registro">Iniciar Sesión</div>
       
-                    <form class="needs-validation" novalidate>
+                    <form class="needs-validation" novalidate id="loginForm">
                       <div class="mb-4">
                         <input type="email" class="form-control" id="registroEmail" placeholder="Email" required>
                         <div class="valid-feedback">
                           Perfecto!
+                        </div>
+                        <div class="invalid-feedback">
+                          Debes introducir tu e-mail.
                         </div>
                       </div>
                       <div class="mb-4">
                         <input type="password" class="form-control" id="registroContraseña" placeholder="Contraseña" required>
                         <div class="valid-feedback">
                           Perfecto!
+                        </div>
+                        <div class="invalid-feedback">
+                          Debes introducir tu contraseña (>=8 caracteres).
                         </div>
                       </div>
                       <button type="submit" class="btn btn-danger btn-registrate mb-3">
@@ -67,5 +73,15 @@
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"
   ></script>
+  <script
+    src="../scripts/validacion.js"></script>
+  <script>
+    document.getElementById('loginForm').addEventListener('submit', function(event) {
+      var valido = validarFormulario();
+      if (!valido) {
+        event.preventDefault();
+        event.stopPropagation();
+      }
+    });</script>
 </body>
 </html>
