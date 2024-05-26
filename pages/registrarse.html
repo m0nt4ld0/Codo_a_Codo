@@ -30,83 +30,100 @@
           />
 
           <div class="position-absolute top-0 start-50 translate-middle-x mt-5">      
-                  <!-- Contenido de la div -->
-                  <div class="registrarse-forma">
-                    <div class="texto-registro">Registro</div>
-      
-                    <form class="needs-validation" novalidate>
-                      <div class="mb-4">
-                        <div class="input-group has-validation">
-                          <input type="text" class="form-control" id="registroNombre" placeholder="Nombre" required>
-                          <div class="valid-feedback">
-                            Perfecto!
-                          </div>
-                        </div>
-                      </div>
-                      <div class="mb-4">
-                        <input type="text" class="form-control" id="registroApellido" placeholder="Apellido" required>
-                        <div class="valid-feedback">
-                          Perfecto!
-                        </div>
-                      </div>
-                      <div class="mb-4">
-                        <input type="email" class="form-control" id="registroEmail" placeholder="Email" required>
-                        <div class="valid-feedback">
-                          Perfecto!
-                        </div>
-                      </div>
-                      <div class="mb-4">
-                        <input type="password" class="form-control" id="registroContraseña" placeholder="Contraseña" required>
-                        <div class="valid-feedback">
-                          Perfecto!
-                        </div>
-                      </div>
-                      <div class="mb-4">
-                        <input type="date" class="form-control" id="registroFecha" placeholder="Fecha nacimiento" required>
-                        <div class="valid-feedback">
-                          Perfecto!
-                        </div>
-                      </div>
-      
-                      <select class="form-select mb-3" aria-label="Default select example">
-                        <option selected>País</option>
-                        <option value="argentina">Argentina</option>
-                        <option value="bolivia">Bolivia</option>
-                        <option value="brasil">Brasil</option>
-                        <option value="chile">Chile</option>
-                      </select>
-                      <div class="mb-4 form-check">
-                        <input
-                          type="checkbox"
-                          class="form-check-input"
-                          id="exampleCheck1"
-                        />
-                        <label
-                          class="form-check-label"
-                          for="exampleCheck1"
-                          style="color: white"
-                        >
-                          Acepto términos y condiciones
-                        </label>
-                      </div>
-                      <button type="submit" class="btn btn-danger btn-registrate mb-3">
-                        Registrarse
-                      </button>
-                      <br>
-                      <div>
-                        <a class="texto-ayuda" href="#">Necesitas ayuda?</a>
-                      </div>
-                    </form>
+            <!-- Contenido de la div -->
+            <div class="registrarse-forma">
+              <div class="texto-registro">Registro</div>
+
+              <form class="needs-validation" id="registroForm" novalidate>
+                <div class="mb-4">
+                  <div class="input-group has-validation">
+                    <input type="text" class="form-control" id="registroNombre" placeholder="Nombre" required>
+                    <div class="valid-feedback">
+                      Perfecto!
+                    </div>
+                    <div class="invalid-feedback">
+                      El nombre no puede estar vacío.
+                    </div>
                   </div>
+                </div>
+                <div class="mb-4">
+                  <input type="text" class="form-control" id="registroApellido" placeholder="Apellido" required>
+                  <div class="valid-feedback">
+                    Perfecto!
+                  </div>
+                  <div class="invalid-feedback">
+                    El apellido no puede estar vacío.
+                  </div>
+                </div>
+                <div class="mb-4">
+                  <input type="email" class="form-control" id="registroEmail" placeholder="Email" required>
+                  <div class="valid-feedback">
+                    Perfecto!
+                  </div>
+                  <div class="invalid-feedback">
+                    Ingresa un correo electrónico válido.
+                  </div>
+                </div>
+                <div class="mb-4">
+                  <input type="password" class="form-control" id="registroContraseña" placeholder="Contraseña" required>
+                  <div class="valid-feedback">
+                    Perfecto!
+                  </div>
+                  <div class="invalid-feedback">
+                    La contraseña debe tener al menos 8 caracteres.
+                  </div>
+                </div>
+                <div class="mb-4">
+                  <input type="date" class="form-control" id="registroFecha" placeholder="Fecha nacimiento" required>
+                  <div class="valid-feedback">
+                    Perfecto!
+                  </div>
+                  <div class="invalid-feedback">
+                    Debes elegir una fecha.
+                  </div>
+                </div>
+
+                <select class="form-select mb-3" id="registroPais" required>
+                  <option value="">País</option>
+                  <option value="argentina">Argentina</option>
+                  <option value="bolivia">Bolivia</option>
+                  <option value="brasil">Brasil</option>
+                  <option value="chile">Chile</option>
+                </select>
+                <div class="invalid-feedback">
+                  Debes elegir un país.
+                </div>
+                
+                <div class="mb-4 form-check">
+                  <input type="checkbox" class="form-check-input" id="terminosCheck" required>
+                  <label class="form-check-label" for="terminosCheck" style="color: white">
+                    Acepto términos y condiciones
+                  </label>
+                  <div class="invalid-feedback">
+                    Debes aceptar los términos y condiciones.
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-danger btn-registrate mb-3">
+                  Registrarse
+                </button>
+                <br>
+                <div>
+                  <a class="texto-ayuda" href="#">Necesitas ayuda?</a>
+                </div>
+              </form>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <script
+  <script src="../scripts/validacionFormulario.js">
+    
+  </script>
+  <script>
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"
-  ></script>
+  </script>
 </body>
 </html>
